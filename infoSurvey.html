@@ -1,149 +1,148 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="AlterVista - Editor HTML"/>
-  <title>Lab 4</title>
-  	<style>
-    	fieldset {width: 320px;
-        			border: 2px ridge #aeaeae;
-                    padding: 10px;
-                    margin-bottom: 10px;}
-        th {text-align: right;}
-        #move {text-align: center;}
-        h4   {color: #0066FF;}
-        #change {text-align: center;}
-        .grey {background-color: #eaeaea;
-		 }
-         #stay {text-align: center;}
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Lab 4</title>
+      	<style>
+        	fieldset {width: 320px;
+            			border: 2px ridge #aeaeae;
+                        padding: 10px;
+                        margin-bottom: 10px;}
+            th {text-align: right;}
+            #move {text-align: center;}
+            h4   {color: #0066FF;}
+            #change {text-align: center;}
+            .grey {background-color: #eaeaea;
+    		 }
+             #stay {text-align: center;}
 
-    </style>
-</head>
-<body>
-<form method = "post" action = "lab4.php">
-	<h1>Information security Awereness Survey</h1>
+        </style>
+    </head>
+    <body>
+    <form method = "post" action = "lab4.php">
+    	<h1>Information security Awereness Survey</h1>
 
-    <h4>Demographic information</h4>
+        <h4>Demographic information</h4>
+        <table>
+        	<tr><th><label for = "gender">Gender:</label></th>
+            		<td><select id = "gender" name = "gender">
+                     <option value = "Male">Male</option>
+                      <option value = "Female">Female</option>
+                    </select></td></tr>
+                    	<tr><th><label type = "number" for = "age" min = "0" max = "100">Age:</label></th>
+            		<td><select id = "age" name = "age">
+                     <option value = "Freshmen">Freshmen</option>
+                      <option value = "Sophmore">Sophmore</option>
+                       <option value = "Junior">Junior</option>
+                      <option value = "Senior">Senior</option>
+                    </select></td></tr>
+                    	<tr><th><label for = "level">Level:</label></th>
+            		<td><select size = "1" id = "level" name = "level">
+                    <option>Choose your level at GGC</option>
+                     <option value = "Freshmen">Freshmen</option>
+                      <option value = "Sophmore">Sophmore</option>
+                       <option value = "Junior">Junior</option>
+                      <option value = "Senior">Senior</option>
+                    </select></td></tr>
+      	 	<tr><th><label for = "School">School:</label></th>
+            		<td><select size = "1" id = "school" name = "school">
+                    <option>SST</option>
+                     <option value = "SST">SST</option>
+                      <option value = "SSB">SSB</option>
+                       <option value = "SE">SE</option>
+                      <option value = "SLA">SLA</option>
+                    </select></td></tr>
+
+
+            </table>
+            <h4>2. How do you evaluae your security knowledge</h4>
+          Choose from between 1 and 100<br>
+    1<input type = "range" id = "score" name = "score">100
+    <br>
+    <p>3. Have your computers infected by virus before</p>
+    <td><input type = "radio" id = "virus" name = "virus" value = "Yes">Yes</td><td><input type = "radio" id = "yes" name = "virus" value = "yes">No</td>
+
+    <h4>3. What antivirus software do you usually use(you can pick more then one answer)?</h4>
     <table>
-    	<tr><th><label for = "gender">Gender:</label></th>
-        		<td><select id = "gender" name = "gender">
-                 <option value = "Male">Male</option>
-                  <option value = "Female">Female</option>
-                </select></td></tr>
-                	<tr><th><label type = "number" for = "age" min = "0" max = "100">Age:</label></th>
-        		<td><select id = "age" name = "age">
-                 <option value = "Freshmen">Freshmen</option>
-                  <option value = "Sophmore">Sophmore</option>
-                   <option value = "Junior">Junior</option>
-                  <option value = "Senior">Senior</option>
-                </select></td></tr>
-                	<tr><th><label for = "level">Level:</label></th>
-        		<td><select size = "1" id = "level" name = "level">
-                <option>Choose your level at GGC</option>
-                 <option value = "Freshmen">Freshmen</option>
-                  <option value = "Sophmore">Sophmore</option>
-                   <option value = "Junior">Junior</option>
-                  <option value = "Senior">Senior</option>
-                </select></td></tr>
-  	 	<tr><th><label for = "School">School:</label></th>
-        		<td><select size = "1" id = "school" name = "school">
-                <option>SST</option>
-                 <option value = "SST">SST</option>
-                  <option value = "SSB">SSB</option>
-                   <option value = "SE">SE</option>
-                  <option value = "SLA">SLA</option>
-                </select></td></tr>
-
-
-        </table>
-        <h4>2. How do you evaluae your security knowledge</h4>
-      Choose from between 1 and 100<br>
-1<input type = "range" id = "score" name = "score">100
-<br>
-<p>3. Have your computers infected by virus before</p>
-<td><input type = "radio" id = "virus" name = "virus" value = "Yes">Yes</td><td><input type = "radio" id = "yes" name = "virus" value = "yes">No</td>
-
-<h4>3. What antivirus software do you usually use(you can pick more then one answer)?</h4>
-<table>
-
-<tr>
-
-    <td><input type = "checkbox" id = "virus" name = "Norton" value = "Norton">Norton</td>
-    <td><input type = "checkbox" id = "virus" name = "Mcafee" value = "Mcafee">McAfee</td>
-    <td><input type = "checkbox" id = "virus" name = "Kasperski" value = "Kasperski">Kasperski</td>
-
-
-</tr>
-<tr>
-  <td><input type = "checkbox" id = "virus" name = "AVG" value = "AVG">AVG</td>
-    <td><input type = "checkbox" id = "virus" name = "Avast" value = "Avast">Avast</td>
-    <td><input type = "checkbox" id = "virus" name = "Malwarebytes" value = "Malwarebytes">Malwarebytes</td>
- </tr>
- <tr>
-   <td><input type = "checkbox" id = "virus" name = "Bitdefender" value = "Bitdefender">Bitdefender</td>
-    <td><input type = "checkbox" id = "virus" name = "Webroot" value = "Webroot">Webroot</td>
-    <td><input type = "checkbox" id = "virus" name = "Trend Micro" value = "Trend Micro">Trend Micro</td>
-</tr>
-
-
-</table>
-<h4>4. Please rate the following questons from strongly disagree and strongly agree:</h4>
-
-<table>
-<tr id = "move" class = "grey">
-    <td>Questions:</td>
-    <td>Strongly Disagree </td>
-    <td>Disagree</td>
-   <td>Neutral</td>
-    <td>Agree</td>
-   <td>Strongly Agree</td>
-
-</tr>
-<tr>
-  <td>I know how to creat a strong password</td>
-    <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Strongly Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Neutral"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Agree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Strongly Agree"></td>
-
-</tr>
-<tr class = "grey">
-    <td>I know how to remove virus from my computer</td>
-    <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Strongly Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Neutral"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Agree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Strongly Agree"></td>
 
     <tr>
-    <td>I know how to remove sypyware from my computer</td>
-    <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Strongly Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "hight" value = "Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Neutral"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Agree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Strongly Agree"></td>
 
+        <td><input type = "checkbox" id = "virus" name = "Norton" value = "Norton">Norton</td>
+        <td><input type = "checkbox" id = "virus" name = "Mcafee" value = "Mcafee">McAfee</td>
+        <td><input type = "checkbox" id = "virus" name = "Kasperski" value = "Kasperski">Kasperski</td>
+
+
+    </tr>
+    <tr>
+      <td><input type = "checkbox" id = "virus" name = "AVG" value = "AVG">AVG</td>
+        <td><input type = "checkbox" id = "virus" name = "Avast" value = "Avast">Avast</td>
+        <td><input type = "checkbox" id = "virus" name = "Malwarebytes" value = "Malwarebytes">Malwarebytes</td>
+     </tr>
+     <tr>
+       <td><input type = "checkbox" id = "virus" name = "Bitdefender" value = "Bitdefender">Bitdefender</td>
+        <td><input type = "checkbox" id = "virus" name = "Webroot" value = "Webroot">Webroot</td>
+        <td><input type = "checkbox" id = "virus" name = "Trend Micro" value = "Trend Micro">Trend Micro</td>
+    </tr>
+
+
+    </table>
+    <h4>4. Please rate the following questons from strongly disagree and strongly agree:</h4>
+
+    <table>
+    <tr id = "move" class = "grey">
+        <td>Questions:</td>
+        <td>Strongly Disagree </td>
+        <td>Disagree</td>
+       <td>Neutral</td>
+        <td>Agree</td>
+       <td>Strongly Agree</td>
+
+    </tr>
+    <tr>
+      <td>I know how to creat a strong password</td>
+        <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Strongly Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Neutral"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Agree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "evening" value = "Strongly Agree"></td>
+
+    </tr>
     <tr class = "grey">
-    <td>I know how to secure my wireless connection at home</td>
-    <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Strongly Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Neutral"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Agree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Strongly Agree"></td>
+        <td>I know how to remove virus from my computer</td>
+        <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Strongly Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Neutral"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Agree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "morning" value = "Strongly Agree"></td>
 
-    <tr>
-    <td>I know how to protect my personal informtion while searching the Internet</td>
-    <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Strongly Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Disagree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Neutral"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Agree"></td>
-    <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Strongly Agree"></td>
+        <tr>
+        <td>I know how to remove sypyware from my computer</td>
+        <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Strongly Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "hight" value = "Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Neutral"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Agree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "night" value = "Strongly Agree"></td>
+
+        <tr class = "grey">
+        <td>I know how to secure my wireless connection at home</td>
+        <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Strongly Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Neutral"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Agree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "afternoon" value = "Strongly Agree"></td>
+
+        <tr>
+        <td>I know how to protect my personal informtion while searching the Internet</td>
+        <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Strongly Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Disagree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Neutral"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Agree"></td>
+        <td id = "stay"><input type = "radio" id = "change" name = "yesterday" value = "Strongly Agree"></td>
 
 
-</table>
-<input type = "submit" value = "Submit">
- <input type = "reset" value = "Reset">
-</form>
-</body>
-</html>
+    </table>
+    <input type = "submit" value = "Submit">
+     <input type = "reset" value = "Reset">
+    </form>
+    </body>
+    </html>
